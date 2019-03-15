@@ -1,0 +1,210 @@
+<!DOCTYPLE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Data Collection Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <img src="img_girl.jpg" style="width:100%;"> -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<script type="text/javascript">
+		
+			<!-- Function to validate on submit if text fields are complete -->
+			function validate_one()
+			{
+				if (document.form_one.First_Name.value == "")
+				
+					{
+						alert ( "Please provide your first name!");
+						document.form_one.First_Name.focus();
+						return false;
+						
+					}
+					
+				if (document.form_one.Last_Name.value == "" )
+				
+					{
+						alert ( "Please provide your last name!");
+						document.form_one.Last_Name.focus();
+						return false;
+						
+					}
+					
+				if (document.form_one.email_address.value == "" )
+				
+					{
+						alert ( "Please provide your Email Address!");
+						document.form_one.email_address.focus();
+						return false;
+						
+					}
+					
+				
+				if (document.form_one.phone_number.value == "" )
+				
+					{
+						alert ( "Please provide your phone number!");
+						document.form_one.phone_number.focus();
+						return false;
+						
+					}
+				
+				return ( true );
+				
+			}
+			
+			function validate_two()
+			
+			{
+			
+				if (document.form_two.street_name.value == "" )
+				
+				{
+				
+					alert ( "Please provide your street name" )
+					document.form_two.street_name.focus();
+					return false;
+					
+				}
+				
+				return ( true );
+			
+			}
+		
+		
+			
+		</script>
+	</head>
+	
+	<div id="wrap">
+	<body class="acp">
+	
+		<h1>ACCOUNT CREATION PAGE</h1>
+	
+	
+		<form>
+		
+			
+			<form name="form_one" onsubmit="return(validate_one());">
+			
+				<label><h2 class="labelh2">PERSONAL DETAILS:</h2></label>
+				
+			<div class="imagedev5">
+				<h2 class="ihtwo">First Name:*</h2>
+				<!-- Javascript required -->
+				<input type="text" name="First_Name" placeholder="First Name"/>
+			</div>
+			
+			<div class="imagedev5">
+				<h2 class="ihtwo">Middle Name:</h2>
+				<!-- Not required -->
+				<input type="text" placeholder="Middle Name"/>
+			</div>
+				
+			<div class="imagedev5">	
+				<h2 class="ihtwo">Last Name:*</h2>
+				<!-- Javascript required -->
+				<input type="text" name="Last_Name" placeholder="Last Name"/>
+			</div>	
+			
+			
+			<div class="imagedev5">	
+				<h2 class="ihtwo" style="padding: 13%;">Age:*</h2>
+				<!-- Javascript Required -->
+				<input type="range" min="20" max="60"/>
+			</div>
+			
+			<div class="imagedev5">		
+				<h2 class="ihtwo">Email Address:*</h2>
+				<!-- Javascript Required -->
+				<input type="text" name="email_address" placeholder="Email Address" size="30"/>
+			</div>
+				
+			<div class="imagedev5">	
+				<h2 class="ihtwo">Phone Number:*</h2>
+				<!-- Javascript Required -->
+				<input type="tel" name="phone_number" placeholder="eg. +61000 000000"/>
+			</div>
+				
+			</form>
+			
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			
+			<form name="form_two" onsubmit="return(validate_two());">
+			
+				<label><h2 class="labelh2">ADDRESS:</h2></label>
+				
+				<h2>Street Name:</h2>
+				<!-- Javascript Required -->
+				<input type="text" name="street_name" size="30"/>
+				
+				<h2>Street Number:</h2>
+				<!-- Javascript Required -->
+				<input type="text">
+				
+				<h2>Apparment Number: <i>Not Required</i></h2>
+				<!-- Not Required -->
+				<input type="text" size="30"/>
+				
+				<h2>Post Code:</h2>
+				<!-- Javascript Required -->
+				<input type="text" pattern="[0-9]{4}" title="Post Code"/>
+				
+				<h2>State:</h2>
+				<!-- Javascript Required -->
+				<select name="State">
+					<option value="NSW"/>NSW
+					<option value="QLD"/>QLD
+					<option value="SA"/>SA
+					<option value="TAS"/>TAS
+					<option value="VIC"/>VIC
+					<option value="WA"/>WA
+					<option value="ACT"/>ACT
+				</select>
+				
+				<input type="submit" value="Submit">
+				
+			
+			</form>
+			
+			<form class="radio_form">
+			
+				<h2 class="radio_h2">What is your favorite cuisine?</h2>
+			
+				Asian:<input type="radio" name="cuisine" value="asian:" checked ><br>
+				BBQ and Grill:<input type="radio" name="cuisine" value="bbq_and_grill:"><br>
+				Burgers:<input type="radio" name="cuisine" value="burgers"><br>
+				Indian:<input type="radio" name="cuisine" value="indian"><br>
+				Italian:<input type="radio" name="cuisine" value="italian"><br>
+				Thai:<input type="radio" name="cuisine" value="thai"><br>
+				Other:<input type="radio" name="cuisine" value="other"><br>
+			
+			</form>
+	
+			<form>
+			
+				<input type="submit" value="Submit">
+				
+			</form>
+	
+		</form>
+	</body>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

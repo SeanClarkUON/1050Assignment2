@@ -1,0 +1,58 @@
+<!DOCTYPLE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Data Collection Page 2.0</title>
+		<link rel="stylesheet" type="text/css" href="Data_Collection_Page_CSS.css" />
+		
+		<script type="text/javascript">
+		
+			function validate()
+			{
+				if ( document.test.Name.value == "" )
+				
+					{
+						alert ( "Please prove your name!" );
+						document.text.Name.focus();
+						return false;
+						
+					}
+					
+				return( true );
+					
+			}
+					
+					var email_auth = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+					
+				if (document.form_one.email_address.value ! "@" )
+				
+					{
+						alert ( "Please provide valid Email Address!")
+						document.form_one.email_address.focus();
+						return false;
+						
+					}
+					
+				
+		
+		</script>
+		
+	</head>
+	
+	<body>
+	
+	<form name="test" onsubmit="return(validate());">
+	
+	<input type="text" name="Name" placeholder="Name">
+	
+	<input type="submit" value="Submit">
+	
+	</form>
+	
+	
+	
+	</body>
+	
+</html>

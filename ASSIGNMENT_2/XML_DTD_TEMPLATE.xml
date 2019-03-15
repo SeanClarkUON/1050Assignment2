@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE online_food_delivery [
+
+	<!ELEMENT online_food_delivery (
+		restaurants)>
+			<!ELEMENT restaurants (
+				restaurants_name*,
+				cuisine_type,
+				address*,
+				hours*,
+				price*,
+				delivery*
+				)>
+				
+					<!-- RESTAURANTS NAME - LOGO - URL - DISCRIPTION -->
+				
+					<!ELEMENT restaurants_name (
+						name*,
+						logo*,
+						url*,
+						discription*,
+						owner*,
+						owner_one*
+						)>
+							<!ELEMENT name (#PCDATA)>
+							<!ELEMENT logo (#PCDATA)>
+							<!ELEMENT url (#PCDATA)>
+							<!ELEMENT discription (#PCDATA)>
+							<!-- ENTITY -->
+							<!ENTITY owner "Some Person.">
+							<!ELEMENT owner_one (#PCDATA)>
+							
+					<!-- CUISINE TYPE - CAN ONLY PICK ONE -->
+							
+					<!ELEMENT cuisine_type (
+						asian,
+						bbq_and_grill,
+						burgers,
+						indian,
+						italian,
+						thai
+						)>
+							<!ELEMENT asian (#PCDATA)>
+							<!ELEMENT bbq_and_grill (#PCDATA)>
+							<!ELEMENT burgers (#PCDATA)>
+							<!ELEMENT indian (#PCDATA)>
+							<!ELEMENT italian (#PCDATA)>
+							<!ELEMENT thai (#PCDATA)>
+							
+					<!-- ADDRESS - LOCATION - PHONENUMBER -->
+						
+					<!ELEMENT address (
+						url_two*,
+						location*,
+						phone_number*
+						)>
+							<!ELEMENT url_two (#PCDATA)>
+							<!ELEMENT location (
+								street_number*,
+								street_name*,
+								suburb*,
+								post_code*
+								)>
+									<!ELEMENT street_number (#PCDATA)>
+									<!ELEMENT street_name (#PCDATA)>
+									<!ELEMENT suburb (#PCDATA)>
+									<!ELEMENT post_code (#PCDATA)>
+							<!ELEMENT phone_number (#PCDATA)>
+							
+					<!-- RESTAURANTS HOURS - DAYS - OPEN TIME - CLOSS TIME -->
+							
+					<!ELEMENT hours (
+						open_time*,
+						close_time*,
+						days_open*
+						)>
+							<!ELEMENT open_time (
+								hour_open*,
+								minutues_open*,
+								am_open*,
+								pm_open*
+								)>
+									<!ELEMENT hour_open (#PCDATA)>
+									<!ELEMENT minutues_open (#PCDATA)>
+									<!ELEMENT am_open (#PCDATA)>
+									<!ELEMENT pm_open (#PCDATA)>
+							<!ELEMENT close_time (
+								hour_close*,
+								minutues_close*,
+								am_close*,
+								pm_close*
+								)>
+									<!ELEMENT hour_close (#PCDATA)>
+									<!ELEMENT minutues_close (#PCDATA)>
+									<!ELEMENT am_close (#PCDATA)>
+									<!ELEMENT pm_close (#PCDATA)>
+							<!ELEMENT days_open (
+								monday*,
+								tuesday*,
+								wednesday*,
+								thursday*,
+								friday*,
+								saturday*,
+								sunday*
+								)>
+									<!ELEMENT monday (#PCDATA)>
+									<!ELEMENT tuesday (#PCDATA)>
+									<!ELEMENT wednesday (#PCDATA)>
+									<!ELEMENT thursday (#PCDATA)>
+									<!ELEMENT friday (#PCDATA)>
+									<!ELEMENT saturday (#PCDATA)>
+									<!ELEMENT sunday (#PCDATA)>
+									
+					<!-- PRICE - MININUM - FEE - AVERAGE COST -->
+					
+					<!ELEMENT price (
+						mininum_price*,
+						delivery_fee*,
+						average_cost*
+						)>
+							<!ELEMENT mininum_price (
+								dollor*,
+								cent*
+								)>
+									<!ELEMENT dollor (#PCDATA)>
+									<!ELEMENT cent (#PCDATA)>
+							<!ELEMENT delivery_fee (
+								dollor_df*,
+								cent_df*
+								)>
+									<!ELEMENT dollor_df (#PCDATA)>
+									<!ELEMENT cent_df (#PCDATA)>
+									
+							<!-- EXTRA TAG ONE -->		
+									
+							<!ELEMENT average_cost (
+								dollor_ac*,
+								cent_ac*
+								)>
+									<!ELEMENT dollor_ac (#PCDATA)>
+									<!ELEMENT cent_ac (#PCDATA)>
+									
+					<!-- DELIVERY DETAILS - MAX DISTANCE - AVERAGE DELIVERY TIME -->
+					
+					<!ELEMENT delivery (
+						distance*,
+						average_time*
+						)>
+							<!-- EXTRA TAG TWO -->
+							<!ELEMENT distance (#PCDATA)>
+							<!-- EXTRA TAG THREE -->
+							<!ELEMENT average_time (#PCDATA)>
+						
+]>
+
+<online_food_delivery>
+
+	<!-- Restaurants Details -->
+
+	<restaurants>
+	
+		<!-- Restaurant name, URL and LOGO -->
+	
+		<restaurants_name>
+			<name>				</name>
+			<logo>				</logo>
+			<url>				</url>
+			<discription>		</discription>
+			<owner_one>&owner;</owner_one>
+		</restaurants_name>
+		
+		<!-- Cuisine Details -->
+		
+		<cuisine_type>
+			<asian>				</asian>
+			<bbq_and_grill>		</bbq_and_grill>
+			<burgers>			</burgers>
+			<indian>			</indian>
+			<italian>			</italian>
+			<thai>				</thai>
+		</cuisine_type>
+		
+		<!-- Address Details -->
+		
+		<address>
+			<url_two>				</url_two>
+			<location>
+				<street_number>			</street_number>
+				<street_name>			</street_name>
+				<suburb>				</suburb>
+				<post_code>				</post_code>
+			</location>
+			<phone_number>			</phone_number>
+		</address>
+		
+		<!-- Hours Details -->
+		
+		<hours>
+			<open_time>
+				<hour_open>			</hour_open>
+				<minutues_open>		</minutues_open>
+				<am_open>			</am_open>
+				<pm_open>			</pm_open>
+			</open_time>
+			<close_time>
+				<hour_close>			</hour_close>
+				<minutues_close>		</minutues_close>
+				<am_close>			</am_close>
+				<pm_close>			</pm_close>
+			</close_time>
+			<days_open>
+				<monday>		</monday>
+				<tuesday>		</tuesday>
+				<wednesday>		</wednesday>
+				<thursday>		</thursday>
+				<friday>		</friday>
+				<saturday>		</saturday>
+				<sunday>		</sunday>
+			</days_open>
+		</hours>
+		
+		<!-- Price Details -->
+		
+		<price>
+			<mininum_price>
+				<dollor>		</dollor>
+				<cent>			</cent>
+			</mininum_price>
+			<delivery_fee>
+				<dollor_df>		</dollor_df>
+				<cent_df>			</cent_df>
+			</delivery_fee>
+			<!-- EXTRA TAG ONE -->
+			<average_cost> <!-- Average cost of meal -->
+				<dollor_ac>		</dollor_ac>
+				<cent_ac>			</cent_ac>
+			</average_cost>
+		</price>
+		
+		<!-- Delivery Details -->
+		
+		<delivery>
+			<!-- EXTRA TAG TWO -->
+			<distance>			</distance> <!-- Max Distance they will deliver too -->
+			<!-- EXTRA TAG THREE -->
+			<average_time>		</average_time> <!-- Average time of delivery -->
+		</delivery>
+	</restaurants>
+	
+</online_food_delivery>		

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>Insert Title Here</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<img src="img_girl.jpg" style="width:100%;">
+		<link rel="stylesheet type="text/css" href="CSS LINK HERE" />
+	
+		<script type="text/javascript">
+	
+			function validate_one()
+			{
+				if (document.form_one.email_address.value != "@")
+				
+					{
+						alert ("Email requires an @ symbol");
+						document.form_one.email_address.focus();
+						return false;
+						
+					}
+					
+				return true;
+			
+			
+			}
+	
+	
+		</script>
+	
+	
+	</head>
+	
+	<body>
+	
+	<form name="form_one" onsubmit="return(validate_one());">
+
+		<h2 class="ihtwo">Email Address:*</h2>
+		<!-- Javascript Required -->
+		<input type="text" name="email_address" placeholder="Email Address" size="30"/>
+	
+	
+		<input type="submit" value="Submit">
+
+	
+	</form>
+	
+	
+	</body>
+
+	
+
+</html>

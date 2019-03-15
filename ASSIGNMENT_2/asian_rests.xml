@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="asian-xslt-three.xsl" type="text/xsl"?>
+
+<!-- asian_rests.xml | xml doc | Sean_Clark | c3269995 | SENG_1050 | Assignment_Two | sml | Created_10/08/2017 -->
+
+<!DOCTYPE online_food_delivery [
+
+	<!ELEMENT online_food_delivery (
+		rest_name*
+		)>
+
+			<!ELEMENT rest_name (
+				name*,
+				logo*,
+				url*,
+				discription*,
+				owner*,
+				owner_one*,
+				cuisine*,
+				address*,
+				hours*,
+				price*,
+				delivery*
+				)>
+					<!ELEMENT name (#PCDATA)>
+					<!ELEMENT logo (#PCDATA)>
+					<!ELEMENT url (#PCDATA)>
+					<!ELEMENT discription (#PCDATA)>
+					<!-- ENTITY -->
+					<!ENTITY owner "Some Person.">
+					<!-- ENTITY -->
+					<!ELEMENT owner_one (#PCDATA)>
+					<!ELEMENT cuisine (#PCDATA)>
+					<!ELEMENT address (
+						location*,
+						phone_number*
+						)>
+							<!ELEMENT location (#PCDATA)>
+							<!ELEMENT phone_number (#PCDATA)>
+					<!ELEMENT hours (
+						open*,
+						close*,
+						days_open*
+						)>
+							<!ELEMENT open (#PCDATA)>
+							<!ELEMENT close (#PCDATA)>
+							<!ELEMENT days_open (
+								monday*,
+								tuesday*,
+								wednesday*,
+								thursday*,
+								friday*,
+								saturday*,
+								sunday*
+								)>
+									<!ELEMENT monday (#PCDATA)>
+									<!ELEMENT tuesday (#PCDATA)>
+									<!ELEMENT wednesday (#PCDATA)>
+									<!ELEMENT thursday (#PCDATA)>
+									<!ELEMENT friday (#PCDATA)>
+									<!ELEMENT saturday (#PCDATA)>
+									<!ELEMENT sunday (#PCDATA)>
+					<!ELEMENT price (
+						minimum*,
+						delivery_fee*,
+						average*
+						)>
+							<!ELEMENT minimum (#PCDATA)>
+							<!ELEMENT delivery_fee (#PCDATA)>
+							<!ELEMENT average (#PCDATA)> <!-- EXTRA TAG ONE -->
+					<!ELEMENT delivery (
+						distance*,
+						average_time*
+						)>
+							<!ELEMENT distance (#PCDATA)> <!-- EXTRA TAG TWO -->
+							<!ELEMENT average_time (#PCDATA)> <!-- EXTRA TAG THREE -->
+]>
+
+<online_food_delivery>
+
+	<rest_name>	
+		<name>Yi Lan Asian Restaurant</name>
+		<logo>images/asian_icon.jpg</logo>
+		<url>YiLanRestaurant.com</url>
+		<discription>This is the Discription</discription>
+		<!-- ENTITY -->
+		<owner_one>&owner;</owner_one>
+		<cuisine>Asian</cuisine>
+		<address>
+			<location>42, Yi Lan Street, Newcaslte, NSW, 9999</location>
+			<phone_number>123456789</phone_number>
+		</address>
+		<hours>
+			<open>9am</open>
+			<close>11pm</close>
+			<days_open>
+				<monday>Open</monday>
+				<tuesday>Open</tuesday>
+				<wednesday>Open</wednesday>
+				<thursday>Open</thursday>
+				<friday>Open</friday>
+				<saturday>Open</saturday>
+				<sunday>Open</sunday>
+			</days_open>
+		</hours>
+		<price>
+			<minimum>10</minimum>
+			<delivery_fee>5</delivery_fee>
+			<average>13</average>
+		</price>
+		<delivery>
+			<distance>60</distance>
+			<average_time>60</average_time>
+		</delivery>
+	</rest_name>
+	
+	<rest_name>	
+		<name>Mo Tu Asian Restaurant</name>
+		<logo>images/indian_icon.jpg</logo>
+		<url>MoTuRestaurant.com</url>
+		<discription>This is the Discription</discription>
+		<!-- ENTITY -->
+		<owner_one>&owner;</owner_one>
+		<cuisine>Asian</cuisine>
+		<address>
+			<location>Mo Tu Stree, Newcaslte, NSW, 9999</location>
+			<phone_number>123456789</phone_number>
+		</address>
+		<hours>
+			<open>9am</open>
+			<close>11pm</close>
+			<days_open>
+				<monday>Open</monday>
+				<tuesday>Open</tuesday>
+				<wednesday>Open</wednesday>
+				<thursday>Open</thursday>
+				<friday>Open</friday>
+				<saturday>Open</saturday>
+				<sunday>Closed</sunday>
+			</days_open>
+		</hours>
+		<price>
+			<minimum>14</minimum>
+			<delivery_fee>11</delivery_fee>
+			<average>20</average>
+		</price>
+		<delivery>
+			<distance>20</distance>
+			<average_time>20</average_time>
+		</delivery>
+	</rest_name>
+	
+	<rest_name>	
+		<name>Li Shun Asian Restaurant</name>
+		<logo>images/placeholder.png</logo>
+		<url>MoTuRestaurant.com</url>
+		<discription>This is the Discription This is the Discription This is the Discription </discription>
+		<!-- ENTITY -->
+		<owner_one>&owner;</owner_one>
+		<cuisine>Asian</cuisine>
+		<address>
+			<location>39, Li Shun Street, Newcaslte, NSW, 9999</location>
+			<phone_number>123456789</phone_number>
+		</address>
+		<hours>
+			<open>9am</open>
+			<close>11pm</close>
+			<days_open>
+				<monday>Open</monday>
+				<tuesday>Open</tuesday>
+				<wednesday>Open</wednesday>
+				<thursday>Open</thursday>
+				<friday>Open</friday>
+				<saturday>Open</saturday>
+				<sunday>Closed</sunday>
+			</days_open>
+		</hours>
+		<price>
+			<minimum>25</minimum>
+			<delivery_fee>15</delivery_fee>
+			<average>32</average>
+		</price>
+		<delivery>
+			<distance>80</distance>
+			<average_time>60</average_time>
+		</delivery>
+	</rest_name>
+	
+
+</online_food_delivery>
